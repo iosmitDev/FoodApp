@@ -13,6 +13,10 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var nextButton: UIButton!
     
+    var slide: [OnboardingSlide] = []
+   // var slider = OnboardingSlide() If want to make like string class how to do, check once creating class
+       
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,4 +28,27 @@ class OnboardingViewController: UIViewController {
         
     }
         
+}
+
+extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    //numberOfItemsInSection in collectionview whereas tableview has numberOfrows
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        slide.count
+    }
+    
+    //cellForItemAt method //Cellforrowat in Tablview
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+     
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as? OnboardingCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        cell.onBoardingSlideData = slide[indexPath.row]
+        
+        return cell
+        
+    }
+    
 }
