@@ -23,9 +23,19 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         
     func collectionViewCellConfiguration() {
         
-        sliderImageView.image = onBoardingSlideData?.image
-        sliderTitleLabel.text = onBoardingSlideData?.title
-        sliderDescriptionLabel.text = onBoardingSlideData?.description
+        guard let onBoardingSlideData else {return}
+        
+        sliderImageView.image = onBoardingSlideData.image
+        sliderTitleLabel.text = onBoardingSlideData.title
+        sliderDescriptionLabel.text = onBoardingSlideData.description
+        
+    }
+    
+    func collectionViewCellConfiguration(_ slide: OnboardingSlide) {
+        
+        sliderImageView.image = slide.image
+        sliderTitleLabel.text = slide.title
+        sliderDescriptionLabel.text = slide.description
         
     }
     
