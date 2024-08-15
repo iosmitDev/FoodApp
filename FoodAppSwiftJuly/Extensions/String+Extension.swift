@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+extension String {
+    
+    //Create new computed property named asURL is type of URL and return URL from String
+    var asURL: URL? {
+        return URL(string: self)
+    }
+    
+}

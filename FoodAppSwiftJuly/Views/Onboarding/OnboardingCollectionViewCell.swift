@@ -13,6 +13,11 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var sliderTitleLabel: UILabel!
     @IBOutlet weak var sliderDescriptionLabel: UILabel!
     
+    static var identifier = {
+        
+        return String(describing: OnboardingCollectionViewCell.self)
+    }
+    
     var onBoardingSlideData: OnboardingSlide? {
         
         didSet {

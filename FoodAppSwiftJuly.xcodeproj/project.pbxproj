@@ -14,7 +14,16 @@
 		1156B89A2C6B724A005AC97F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1156B8992C6B724A005AC97F /* Base */; };
 		1156B8A52C6C05F3005AC97F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156B8A42C6C05F3005AC97F /* OnboardingViewController.swift */; };
 		1156B8A82C6C09D7005AC97F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156B8A72C6C09D7005AC97F /* UIView+Extension.swift */; };
+		116B725B2C6DFDEF00A0FDE1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116B725A2C6DFDEF00A0FDE1 /* CardView.swift */; };
+		116B725F2C6E130900A0FDE1 /* PopularDishCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116B725E2C6E130900A0FDE1 /* PopularDishCollectionViewCell.xib */; };
+		116B72602C6E130900A0FDE1 /* PopularDishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116B725D2C6E130900A0FDE1 /* PopularDishCollectionViewCell.swift */; };
 		11B57D842C6CC42D0068A463 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B57D832C6CC42D0068A463 /* OnboardingCollectionViewCell.swift */; };
+		11B57D872C6D3AFC0068A463 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B57D862C6D3AFC0068A463 /* HomeViewController.swift */; };
+		11B57D8D2C6D59340068A463 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B57D8B2C6D59340068A463 /* CategoryCollectionViewCell.swift */; };
+		11B57D8E2C6D59340068A463 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B57D8C2C6D59340068A463 /* CategoryCollectionViewCell.xib */; };
+		11B57D912C6D5BC50068A463 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B57D902C6D5BC50068A463 /* DishCategory.swift */; };
+		11B57D942C6D5C890068A463 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 11B57D932C6D5C890068A463 /* Kingfisher */; };
+		11B57D962C6D5D6E0068A463 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B57D952C6D5D6E0068A463 /* String+Extension.swift */; };
 		11E91A6F2C6C9A01000EE207 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E91A6E2C6C9A01000EE207 /* OnboardingSlide.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +37,15 @@
 		1156B89B2C6B724A005AC97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1156B8A42C6C05F3005AC97F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1156B8A72C6C09D7005AC97F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		116B725A2C6DFDEF00A0FDE1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		116B725D2C6E130900A0FDE1 /* PopularDishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishCollectionViewCell.swift; sourceTree = "<group>"; };
+		116B725E2C6E130900A0FDE1 /* PopularDishCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularDishCollectionViewCell.xib; sourceTree = "<group>"; };
 		11B57D832C6CC42D0068A463 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		11B57D862C6D3AFC0068A463 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		11B57D8B2C6D59340068A463 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		11B57D8C2C6D59340068A463 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		11B57D902C6D5BC50068A463 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		11B57D952C6D5D6E0068A463 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		11E91A6E2C6C9A01000EE207 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B57D942C6D5C890068A463 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,7 @@
 		1156B88C2C6B7248005AC97F /* FoodAppSwiftJuly */ = {
 			isa = PBXGroup;
 			children = (
+				11B57D882C6D58CE0068A463 /* CustomViews */,
 				1156B8A62C6C099E005AC97F /* Extensions */,
 				1156B8A22C6C05B5005AC97F /* Models */,
 				1156B8A12C6C05AE005AC97F /* Views */,
@@ -79,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1156B8A32C6C05C2005AC97F /* Onboarding */,
+				11B57D852C6D3AE00068A463 /* Home */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -86,6 +106,7 @@
 		1156B8A22C6C05B5005AC97F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				11B57D8F2C6D5BA40068A463 /* DishCategory */,
 				11E91A6E2C6C9A01000EE207 /* OnboardingSlide.swift */,
 			);
 			path = Models;
@@ -104,8 +125,69 @@
 			isa = PBXGroup;
 			children = (
 				1156B8A72C6C09D7005AC97F /* UIView+Extension.swift */,
+				11B57D952C6D5D6E0068A463 /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		116B72592C6DFDE000A0FDE1 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				116B725A2C6DFDEF00A0FDE1 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		116B725C2C6E12DE00A0FDE1 /* PopularDishCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				116B725D2C6E130900A0FDE1 /* PopularDishCollectionViewCell.swift */,
+				116B725E2C6E130900A0FDE1 /* PopularDishCollectionViewCell.xib */,
+			);
+			path = PopularDishCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		11B57D852C6D3AE00068A463 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				11B57D862C6D3AFC0068A463 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		11B57D882C6D58CE0068A463 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				116B72592C6DFDE000A0FDE1 /* CardView */,
+				11B57D892C6D58D90068A463 /* CollectionViewCells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		11B57D892C6D58D90068A463 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				116B725C2C6E12DE00A0FDE1 /* PopularDishCollectionViewCell */,
+				11B57D8A2C6D58F50068A463 /* CategoryCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		11B57D8A2C6D58F50068A463 /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				11B57D8B2C6D59340068A463 /* CategoryCollectionViewCell.swift */,
+				11B57D8C2C6D59340068A463 /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		11B57D8F2C6D5BA40068A463 /* DishCategory */ = {
+			isa = PBXGroup;
+			children = (
+				11B57D902C6D5BC50068A463 /* DishCategory.swift */,
+			);
+			path = DishCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +206,9 @@
 			dependencies = (
 			);
 			name = FoodAppSwiftJuly;
+			packageProductDependencies = (
+				11B57D932C6D5C890068A463 /* Kingfisher */,
+			);
 			productName = FoodAppSwiftJuly;
 			productReference = 1156B88A2C6B7248005AC97F /* FoodAppSwiftJuly.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 1156B8812C6B7248005AC97F;
+			packageReferences = (
+				11B57D922C6D5C890068A463 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 1156B88B2C6B7248005AC97F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,6 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B57D8E2C6D59340068A463 /* CategoryCollectionViewCell.xib in Resources */,
+				116B725F2C6E130900A0FDE1 /* PopularDishCollectionViewCell.xib in Resources */,
 				1156B8972C6B724A005AC97F /* Assets.xcassets in Resources */,
 				1156B89A2C6B724A005AC97F /* Base in Resources */,
 				1156B8952C6B7248005AC97F /* Base in Resources */,
@@ -179,11 +269,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B57D8D2C6D59340068A463 /* CategoryCollectionViewCell.swift in Sources */,
 				11E91A6F2C6C9A01000EE207 /* OnboardingSlide.swift in Sources */,
 				1156B88E2C6B7248005AC97F /* AppDelegate.swift in Sources */,
 				1156B8902C6B7248005AC97F /* SceneDelegate.swift in Sources */,
 				1156B8A82C6C09D7005AC97F /* UIView+Extension.swift in Sources */,
 				1156B8A52C6C05F3005AC97F /* OnboardingViewController.swift in Sources */,
+				11B57D872C6D3AFC0068A463 /* HomeViewController.swift in Sources */,
+				11B57D912C6D5BC50068A463 /* DishCategory.swift in Sources */,
+				116B72602C6E130900A0FDE1 /* PopularDishCollectionViewCell.swift in Sources */,
+				11B57D962C6D5D6E0068A463 /* String+Extension.swift in Sources */,
+				116B725B2C6DFDEF00A0FDE1 /* CardView.swift in Sources */,
 				11B57D842C6CC42D0068A463 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +505,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11B57D922C6D5C890068A463 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11B57D932C6D5C890068A463 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11B57D922C6D5C890068A463 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1156B8822C6B7248005AC97F /* Project object */;
 }

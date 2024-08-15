@@ -15,25 +15,20 @@ class OnboardingViewController: UIViewController {
     
     var currentPage = 0 {
         
-        
-        
         didSet {
-            
             pageControl.currentPage = currentPage
-            
             currentPage == slide.count - 1 ? nextButton.setTitle("Get Started", for: .normal) : nextButton.setTitle("Next", for: .normal)
-            
             
         }
     }
     
     var slide: [OnboardingSlide] = []
-   // var slider = OnboardingSlide() If want to make like string class how to do, check once creating class
-       
+    // var slider = OnboardingSlide() If want to make like string class how to do, check once creating class
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         slide = [OnboardingSlide(title: "Wlcome to india", description: "f want to make like string class how to do, check once creating class", image: UIImage(named: "slide1")!),
@@ -45,9 +40,7 @@ class OnboardingViewController: UIViewController {
     }
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
-                
         
-       
         if currentPage == slide.count - 1 {
             print("Go to Next Page")
             
@@ -61,9 +54,9 @@ class OnboardingViewController: UIViewController {
             collectionView.isPagingEnabled = false
             currentPage += 1
             
-           //get indexpath of collectionView
+            //get indexpath of collectionView
             let indexpath = IndexPath(item: currentPage, section: 0)
-                      
+            
             //set collection view scrollitem at index path
             collectionView.scrollToItem(at: indexpath, at: .centeredHorizontally, animated: true)
             
@@ -71,7 +64,7 @@ class OnboardingViewController: UIViewController {
         }
         
     }
-        
+    
 }
 
 extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -84,13 +77,13 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     
     //cellForItemAt method //Cellforrowat in Tablview
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-     
+        
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as? OnboardingCollectionViewCell else {
             return UICollectionViewCell()
         }
         
         cell.onBoardingSlideData = slide[indexPath.row]
-       // cell.collectionViewCellConfiguration(slide[indexPath.row])
+        // cell.collectionViewCellConfiguration(slide[indexPath.row])
         
         return cell
         
@@ -111,6 +104,6 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         print(currentPage)
         
         currentPage = Int((scrollView.contentOffset.x) / width)
-                
+        
     }
 }
