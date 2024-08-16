@@ -41,7 +41,7 @@ class HomeViewController: UIViewController {
     }
     
     func rating(){
-        
+        //test
     }
     
     private func registerCollectionViewCell() {
