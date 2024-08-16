@@ -40,6 +40,10 @@ class HomeViewController: UIViewController {
       registerCollectionViewCell()
     }
     
+    func rating(){
+        
+    }
+    
     private func registerCollectionViewCell() {
         categoryCollectionView.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCollectionViewCell")
         
