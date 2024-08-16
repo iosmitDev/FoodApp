@@ -43,7 +43,9 @@ class HomeViewController: UIViewController {
     func rating(){
         
     }
-    
+    func foodCategory(){
+
+    }
     private func registerCollectionViewCell() {
         categoryCollectionView.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCollectionViewCell")
         
